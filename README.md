@@ -31,7 +31,7 @@ This is the first version of the website.
 <br>Soon I will launch the second version with animations.
 
 <h1>Deployment</h1>
-<li>Netlify</li>
+	✔️Netlify
 
 <h1>Author</h1>
   <b>Unnati Mishra🙎</b>
