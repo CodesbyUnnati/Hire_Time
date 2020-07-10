@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hire Time</title>
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"
         integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog=="
         crossorigin="anonymous"></script>
@@ -13,21 +14,31 @@
 
 <body>
     <section id="home">
-        <div id="navbar">
-            <nav>
-                <input type="checkbox" id="check" />
+        <!--NAVBAR-->
+        <header class="header-bar">
+            <div class="logo">
+                <a href="">
+                    <h1>
+                        <span class="text-primary"> Hire</span> Time
 
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <label class="logo"><span>Hire</span> Time</label>
+                    </h1>
+                </a>
+            </div>
+            <input type="checkbox" id="toggle-btn">
+            <label class="menuicon" for="toggle-btn">
+                <span class="bars"></span>
+            </label>
+            <div class="menu">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#confuse">Get Hired</a></li>
-                    <li><a href="#hire-someone">Hire Someone</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Get Hired</a></li>
+                    <li><a href="#">HIre Someone</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
+        </header>
+
+        <!--NAVBAR ENDS HERE-->
         </div>
 
         <section id="about-info" class="bg-light py-3">
@@ -73,41 +84,42 @@
             </div>
         </section>
     </section>
-<section id="hire-someone">
-    <section class="review-container">
-        <article class="card">
-            <header>
-                <h2>Collaborate With Other Recruiters</h2>
-            </header>
-            <section class="number">
-                <i class="fas fa-handshake"></i>
-            </section>
-            <section class="review">
-                Get rewarded for sharing candidates you can't hire and get referrals from other recruiters and hiring
-                managers.
-            </section>
-            <footer>
-                <button class="btns"> Request hiring</button>
-            </footer>
-        </article>
+    <section id="hire-someone">
+        <section class="review-container">
+            <article class="card">
+                <header>
+                    <h2>Collaborate With Other Recruiters</h2>
+                </header>
+                <section class="number">
+                    <i class="fas fa-handshake"></i>
+                </section>
+                <section class="review">
+                    Get rewarded for sharing candidates you can't hire and get referrals from other recruiters and
+                    hiring
+                    managers.
+                </section>
+                <footer>
+                    <button class="btns"> Request hiring</button>
+                </footer>
+            </article>
 
-        <article class="card">
-            <header>
-                <h2>Talk With Companies</h2>
+            <article class="card">
+                <header>
+                    <h2>Talk With Companies</h2>
 
-            </header>
-            <section class="review">
-                No CV's or application forms, leverage your references & get great companies to apply.
-            </section>
-            <footer>
-                <button class="btns"> Request Invite</button>
-            </footer>
-            <section class="number">
-                <i class="fas fa-phone"></i>
-            </section>
-        </article>
+                </header>
+                <section class="review">
+                    No CV's or application forms, leverage your references & get great companies to apply.
+                </section>
+                <footer>
+                    <button class="btns"> Request Invite</button>
+                </footer>
+                <section class="number">
+                    <i class="fas fa-phone"></i>
+                </section>
+            </article>
+        </section>
     </section>
-</section>
     <section id="hire">
         <h1><span class="text-primary">Companies </span> Are
             <span class="text-primary"> Hiring</span> For</h1>
@@ -115,31 +127,31 @@
         <img src="img/hire.svg">
     </section>
     <section id="confuse">
-    <section id="about-info" class="bg-light py-3 hired1">
-        <div class="container">
-            <div class="info-left">
-                <h1 class="l-heading">
-                    Not<span class="text-primary"> Hired ? </span> Don't Lose
-                    <span class="text-primary">Hope</span>
-                </h1>
-                <br /><br />
-                <p>
-                    Growing companies spend time and resource, building a pipeline of
-                    talent, but most of the people don't get hired. We at "Hire Time"
-                    combine the sourcing efforts of hiring teams at great companies to match these
-                    people to more relevant roles, and reduce duplicated effort.
-                    <ul class="hired">
-                        <li>Free to get started</li>
-                        <li>Keep your existing workflow</li>
-                        <li>Candidate privacy guaranteed</li>
-                    </ul>
-                </p>
+        <section id="about-info" class="bg-light py-3 hired1">
+            <div class="container">
+                <div class="info-left">
+                    <h1 class="l-heading">
+                        Not<span class="text-primary"> Hired ? </span> Don't Lose
+                        <span class="text-primary">Hope</span>
+                    </h1>
+                    <br /><br />
+                    <p>
+                        Growing companies spend time and resource, building a pipeline of
+                        talent, but most of the people don't get hired. We at "Hire Time"
+                        combine the sourcing efforts of hiring teams at great companies to match these
+                        people to more relevant roles, and reduce duplicated effort.
+                        <ul class="hired">
+                            <li>Free to get started</li>
+                            <li>Keep your existing workflow</li>
+                            <li>Candidate privacy guaranteed</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="info-right">
+                    <img src="img/confusing.svg" alt="hotel" />
+                </div>
             </div>
-            <div class="info-right">
-                <img src="img/confusing.svg" alt="hotel" />
-            </div>
-        </div>
-    </section>
+        </section>
     </section>
     <section id="people">
         <div class="testimonials">
@@ -162,9 +174,9 @@
                             </div>
 
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has
-                                been the industry's standard dummy text ever since the 1500s,
+                                We are satisfied with the prompt and dedicated services from Hire Time which made the
+                                searching methods awesome & more convenient. We appreciate the professionalism displayed
+                                by your portal.
                             </p>
                         </div>
                     </div>
@@ -182,9 +194,10 @@
                             </div>
 
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has
-                                been the industry's standard dummy text ever since the 1500s,
+                                We have been using Hire Time portal from past five years we have been seeing lots of
+                                improvements and increased the competency to needs. We will still continue to be the
+                                part
+                                of Hire Time portal and expecting lot more to see in mere future.
                             </p>
                         </div>
                     </div>
@@ -202,9 +215,10 @@
                             </div>
 
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has
-                                been the industry's standard dummy text ever since the 1500s,
+                                It has been a very satisfying experience using Hire Time .We gladly acknowledge your
+                                timely help and support in sourcing suitable candidates according to given
+                                specifications, as and when required. Our experience of using Hire Time a happy and
+                                fruitful one.
                             </p>
                         </div>
                     </div>
@@ -260,10 +274,10 @@
     <section class="main-footer">
         <footer>
             <div class="footer-container">
-                
+
                 <div class="left-col">
-                         <h1>Hire<span class="text-primary"> Time</span>
-                             <span class="text-primary"></span></h1>
+                    <h1>Hire<span class="text-primary"> Time</span>
+                        <span class="text-primary"></span></h1>
                     <div class="social-media">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -274,15 +288,15 @@
                     <p class="rights-text">
                         <h1>Follow Us On<span class="text-primary"> Social Media</span>
                             <span class="text-primary"></span></h1>
-                       
+
                     </p>
                 </div>
 
                 <div class="right-col">
-                      <h1>Subscribe Our<span class="text-primary"> Newsletter</span>
-                          <span class="text-primary"></span></h1>
-                 
-                 
+                    <h1>Subscribe Our<span class="text-primary"> Newsletter</span>
+                        <span class="text-primary"></span></h1>
+
+
                     <form action="" class="newsletter-form">
                         <input type="text" class="txtb" placeholder="Enter Your Email">
                         <input type="submit" class="btnf" value="submit">
