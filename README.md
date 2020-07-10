@@ -2,7 +2,7 @@
 
 
 # 📍Hire_Time
-The Job Searching Website
+<b>The Job Searching Website</b>
 
 This is a Responsive Website📱 in which you can search for various Jobs like Part-time job,Full-time jobs, Internship, etc.
 The API part is left and will be completed soon🎈
