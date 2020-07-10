@@ -21,6 +21,10 @@ The API part is left and will be completed soon🎈
 <li>SVGs</li>
 <li>Dribble</li>
 
+<h1>Editor</h1>
+🆚Code
+
+
 <h1>Version</h1>
   
 This is the first version of the website.
