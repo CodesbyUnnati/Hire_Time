@@ -33,6 +33,7 @@ body {
     position: relative;
     z-index: 999;
     height: 80px;
+    position: fixed;
 }
 
 .logo a {
@@ -208,14 +209,11 @@ body {
 }
 
 .btn {
-    background: #263238;
-    color: #fff;
+    margin-left: 30px;
     margin-top: 40px;
-   
-    border-radius: 50px;
+    border-radius: 100px;
     letter-spacing: 1px;
     font-weight: 500;
-    text-transform: uppercase;
     outline: none;
     display: -webkit-box;
     display: -webkit-flex;
@@ -224,12 +222,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 10px;
+    padding: 0px 25px;
     min-width: 150px;
     height: 62px;
     border-radius: 31px;
     font-size: 16px;
-    color: #fff;
     line-height: 1.2;
     text-transform: uppercase;
 
@@ -241,8 +238,42 @@ body {
     z-index: 1;
 }
 
+.btn::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    border-radius: 100px;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.5) scaleY(1.4);
+    opacity: 0;
+}
+
+
+.btn-color {
+    color: #fff;
+    background: #263238;
+}
+
+.btn-color::after {
+    background-color: #263238;
+}
+
 .btn:hover {
     background-color: #154964;
+    transform: translateY(-3px);
+    box-shadow:
+    0px 10px 20px rgba(0,0,0,.3);
 }
 
 /* About Info HOME */
@@ -948,4 +979,8 @@ textarea.input100 {
       .btns {
           margin-left: 40%;
       }
+}
+
+.text-justify {
+    text-align: justify;
 }
